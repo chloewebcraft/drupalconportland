@@ -1,0 +1,23 @@
+name: Slider
+props:
+  type: object
+  properties:
+    title:
+      type: string
+      title: Slider Title
+      examples: 
+        - 'My carousel'
+slots:
+  slides:
+    title: Slides
+    description: Content that overrides the slides in the carousel.
+
+# if you use libraryOverrides, it will not automatically load the css and js.
+libraryOverrides:
+  css:
+    component:
+      //cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css: {}
+      slider.css: {}
+  js:
+    //cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js: {}
+    slider.js: {}
